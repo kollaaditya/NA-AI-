@@ -1,0 +1,19 @@
+{
+  "name": "na-ai-systems",
+  "version": "1.0.0",
+  "description": "NA AI Systems - AI-Powered Sustainable Commerce Platform",
+  "scripts": {
+    "dev:server": "cd server && npm run dev",
+    "dev:client": "cd client && npm run dev",
+    "seed": "cd server && npm run seed",
+    "build": "cd client && npm run build",
+    "start": "pm2 start ecosystem.config.js --env production",
+    "stop": "pm2 stop na-ai-systems-api",
+    "restart": "pm2 restart na-ai-systems-api",
+    "logs": "pm2 logs na-ai-systems-api",
+    "install:all": "cd server && npm install && cd ../client && npm install"
+  },
+  "keywords": ["ai", "saas", "sustainable", "commerce", "nodejs", "react"],
+  "author": "NA AI Systems",
+  "license": "MIT"
+}
